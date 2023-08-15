@@ -275,7 +275,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "1af1e159-f2c9-4095-a944-0b043aeb293e",
+				"id": "c0909858-2c76-42d9-bb2d-bf6cdf446b04",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -285,7 +285,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "490f5df9-5ea8-45b7-a306-4c54c3787db7",
+				"id": "6e07802b-4e71-40a6-a01b-9e4227095cd6",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -295,15 +295,15 @@
 	],
 	"variable": [
 		{
-			"id": "20baa966-8c72-4757-be3d-74b97ec9930e",
+			"id": "f7c86e99-3b26-452d-bf6f-8987eda4ccae",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
 		},
 		{
-			"id": "7c361429-ee62-4149-8416-5bb3b844942b",
+			"id": "84720062-50ea-4767-8f61-4a8a675b8cb9",
 			"key": "AccessToken",
-			"value": "",
+			"value": "Private Access Token",
 			"type": "string"
 		}
 	]
