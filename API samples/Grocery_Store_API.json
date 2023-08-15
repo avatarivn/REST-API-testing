@@ -139,7 +139,7 @@
 			"response": []
 		},
 		{
-			"name": "Create new Order",
+			"name": "Create a new Order",
 			"id": "1a1c862e-19d0-4822-a60d-266601252496",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -259,7 +259,7 @@
 	],
 	"variable": [
 		{
-			"id": "73cb3368-acdb-416b-94d2-f30d7df5650d",
+			"id": "0aedaf4e-84ff-429f-be9c-4fc4ca714acd",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
