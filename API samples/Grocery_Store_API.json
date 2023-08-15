@@ -108,31 +108,14 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n   \"productId\": 4646,\r\n   \"quantity\": 2\r\n}",
+					"raw": "{\r\n   \"clientName\": \"Someone learning Postman\",\r\n   \"clientEmail\": \"tester@fakemail.com\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": {
-					"raw": "{{groceryStoreAPI}}/carts/:cartId/items",
-					"host": [
-						"{{groceryStoreAPI}}"
-					],
-					"path": [
-						"carts",
-						":cartId",
-						"items"
-					],
-					"variable": [
-						{
-							"id": "b1aca8e8-bffa-45bb-af87-717f144fb1e5",
-							"key": "cartId",
-							"value": "dX2LGmNmkmRvpjiHqUSCG"
-						}
-					]
-				}
+				"url": "{{groceryStoreAPI}}/api-clients"
 			},
 			"response": []
 		},
@@ -301,7 +284,7 @@
 	],
 	"variable": [
 		{
-			"id": "918fd8fd-41b7-45d5-bae1-e24eab346730",
+			"id": "6c4df73b-17dc-4017-9dc2-8aca0753ecf8",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
