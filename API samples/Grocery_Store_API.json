@@ -166,7 +166,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{groceryStoreAPI}}/products?results=10",
+					"raw": "{{groceryStoreAPI}}/products?results=hello",
 					"host": [
 						"{{groceryStoreAPI}}"
 					],
@@ -181,11 +181,17 @@
 						},
 						{
 							"key": "results",
-							"value": "10"
+							"value": "hello"
 						},
 						{
 							"key": "available",
 							"value": "false",
+							"disabled": true
+						},
+						{
+							"key": "category",
+							"value": "meat-seafood",
+							"type": "text",
 							"disabled": true
 						}
 					]
@@ -253,7 +259,7 @@
 	],
 	"variable": [
 		{
-			"id": "a6b23e9a-fb8b-4c12-a225-e578bd38e4db",
+			"id": "05add9e2-763f-41bd-984d-21e1b43e1dcd",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
