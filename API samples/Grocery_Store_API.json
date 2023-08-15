@@ -119,7 +119,7 @@
 					"variable": [
 						{
 							"key": "cartId",
-							"value": "Mtda1iitptS2S5yjYcpq5"
+							"value": "dX2LGmNmkmRvpjiHqUSCG"
 						}
 					]
 				}
@@ -259,7 +259,7 @@
 	],
 	"variable": [
 		{
-			"id": "05add9e2-763f-41bd-984d-21e1b43e1dcd",
+			"id": "7ab8bcfb-a65d-415c-b376-4fd10b0acafa",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
