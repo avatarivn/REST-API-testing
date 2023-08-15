@@ -22,7 +22,7 @@
 			"response": []
 		},
 		{
-			"name": "Get Items in a Cart",
+			"name": "Get Cart Items",
 			"id": "519de7e6-f86a-4f1e-9290-57bf096a9c6a",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -259,7 +259,7 @@
 	],
 	"variable": [
 		{
-			"id": "017d0015-3c95-441d-9bb3-2189de9d4442",
+			"id": "2103b6b5-de74-4ac1-bf18-81b5e1bc6b96",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
