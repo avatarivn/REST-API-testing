@@ -259,7 +259,7 @@
 	],
 	"variable": [
 		{
-			"id": "7ab8bcfb-a65d-415c-b376-4fd10b0acafa",
+			"id": "ffeea928-8b8b-4b02-9b48-f0d532dc88f6",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
