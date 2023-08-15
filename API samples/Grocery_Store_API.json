@@ -95,31 +95,6 @@
 			"response": []
 		},
 		{
-			"name": "Register a new API client",
-			"id": "fcae4c40-9fe6-466b-8e57-77a80a01c7f0",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"auth": {
-					"type": "noauth"
-				},
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n   \"clientName\": \"Someone learning Postman\",\r\n   \"clientEmail\": \"tester@fakemail.com\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": "{{groceryStoreAPI}}/api-clients"
-			},
-			"response": []
-		},
-		{
 			"name": "Get a cart",
 			"id": "e663bf60-3bc4-4eb4-925a-9042cef79b6a",
 			"protocolProfileBehavior": {
@@ -263,13 +238,38 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Register a new API client",
+			"id": "fcae4c40-9fe6-466b-8e57-77a80a01c7f0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"clientName\": \"Someone learning Postman\",\r\n   \"clientEmail\": \"tester@fakemail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{groceryStoreAPI}}/api-clients"
+			},
+			"response": []
 		}
 	],
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f2ab485b-a216-4c4b-9a46-71d047039883",
+				"id": "1af1e159-f2c9-4095-a944-0b043aeb293e",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -279,7 +279,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "e50577af-ce41-45b3-ae7a-b06f6b0fc43b",
+				"id": "490f5df9-5ea8-45b7-a306-4c54c3787db7",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -289,9 +289,15 @@
 	],
 	"variable": [
 		{
-			"id": "b7eb7f03-61c0-4c6e-9d22-e328d89297f8",
+			"id": "a478dcdf-8e4c-4730-95fe-244691f1656d",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
+			"type": "string"
+		},
+		{
+			"id": "853ec9e1-e30e-406a-becc-e4597c583713",
+			"key": "AccessToken",
+			"value": "",
 			"type": "string"
 		}
 	]
