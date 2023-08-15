@@ -170,13 +170,18 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"cartId\": \"Mtda1iitptS2S5yjYcpq5\",\r\n    \"customerName\": \"Avatarian\"\r\n}"
+					"raw": "{\r\n    \"cartId\": \"dX2LGmNmkmRvpjiHqUSCG\",\r\n    \"customerName\": \"Avatarian\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
 				},
-				"url": "{{groceryStoreAPI}}/status"
+				"url": "{{groceryStoreAPI}}/orders"
 			},
 			"response": []
 		},
@@ -284,7 +289,7 @@
 	],
 	"variable": [
 		{
-			"id": "6c4df73b-17dc-4017-9dc2-8aca0753ecf8",
+			"id": "b7eb7f03-61c0-4c6e-9d22-e328d89297f8",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
