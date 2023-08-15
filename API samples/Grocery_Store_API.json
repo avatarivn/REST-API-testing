@@ -95,6 +95,48 @@
 			"response": []
 		},
 		{
+			"name": "Register a new API client",
+			"id": "fcae4c40-9fe6-466b-8e57-77a80a01c7f0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"productId\": 4646,\r\n   \"quantity\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{groceryStoreAPI}}/carts/:cartId/items",
+					"host": [
+						"{{groceryStoreAPI}}"
+					],
+					"path": [
+						"carts",
+						":cartId",
+						"items"
+					],
+					"variable": [
+						{
+							"id": "b1aca8e8-bffa-45bb-af87-717f144fb1e5",
+							"key": "cartId",
+							"value": "dX2LGmNmkmRvpjiHqUSCG"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Get a cart",
 			"id": "e663bf60-3bc4-4eb4-925a-9042cef79b6a",
 			"protocolProfileBehavior": {
@@ -259,7 +301,7 @@
 	],
 	"variable": [
 		{
-			"id": "0aedaf4e-84ff-429f-be9c-4fc4ca714acd",
+			"id": "918fd8fd-41b7-45d5-bae1-e24eab346730",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
