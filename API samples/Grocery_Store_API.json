@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "2ea61eef-6996-481e-994c-f87617627662",
+		"name": "Simple Grocery Store API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Status",
+			"id": "ba0d68ac-57af-4fe5-9fed-4b0860d3522e",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{groceryStoreAPI}}/status"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Items in a Cart",
+			"id": "519de7e6-f86a-4f1e-9290-57bf096a9c6a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{groceryStoreAPI}}/carts/:cartId/items",
+					"host": [
+						"{{groceryStoreAPI}}"
+					],
+					"path": [
+						"carts",
+						":cartId",
+						"items"
+					],
+					"variable": [
+						{
+							"key": "cartId",
+							"value": "Mtda1iitptS2S5yjYcpq5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add an Item to Cart",
+			"id": "adbd6dbb-e2ad-41f2-8e82-b3bebff30538",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"productId\": 8739,\r\n   \"quantity\":3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{groceryStoreAPI}}/carts/:cartId/items",
+					"host": [
+						"{{groceryStoreAPI}}"
+					],
+					"path": [
+						"carts",
+						":cartId",
+						"items"
+					],
+					"variable": [
+						{
+							"id": "a8a063c5-52fc-4da8-946e-e3a6adf7d291",
+							"key": "cartId",
+							"value": "Mtda1iitptS2S5yjYcpq5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get  Cart",
+			"id": "e663bf60-3bc4-4eb4-925a-9042cef79b6a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{groceryStoreAPI}}/carts/:cartId",
+					"host": [
+						"{{groceryStoreAPI}}"
+					],
+					"path": [
+						"carts",
+						":cartId"
+					],
+					"variable": [
+						{
+							"key": "cartId",
+							"value": "Mtda1iitptS2S5yjYcpq5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a new Cart",
+			"id": "c80b7f44-68d9-4e69-90e0-a42a47f823e4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "{{groceryStoreAPI}}/carts"
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Order",
+			"id": "1a1c862e-19d0-4822-a60d-266601252496",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cartId\": \"Mtda1iitptS2S5yjYcpq5\",\r\n    \"customerName\": \"Avatarian\"\r\n}"
+				},
+				"url": "{{groceryStoreAPI}}/status"
+			},
+			"response": []
+		},
+		{
+			"name": "Get all products",
+			"id": "1dbf0ca0-bece-4f09-8f4a-d835c6329d8a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{groceryStoreAPI}}/products?results=10",
+					"host": [
+						"{{groceryStoreAPI}}"
+					],
+					"path": [
+						"products"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "dairy",
+							"disabled": true
+						},
+						{
+							"key": "results",
+							"value": "10"
+						},
+						{
+							"key": "available",
+							"value": "false",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a Product by ID",
+			"id": "1ea56304-a932-4de7-a5d0-434b3359576f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{groceryStoreAPI}}/products/:productId",
+					"host": [
+						"{{groceryStoreAPI}}"
+					],
+					"path": [
+						"products",
+						":productId"
+					],
+					"query": [
+						{
+							"key": "category",
+							"value": "coffee",
+							"disabled": true
+						}
+					],
+					"variable": [
+						{
+							"key": "productId",
+							"value": "1225"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "f2ab485b-a216-4c4b-9a46-71d047039883",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "e50577af-ce41-45b3-ae7a-b06f6b0fc43b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"id": "a6b23e9a-fb8b-4c12-a225-e578bd38e4db",
+			"key": "groceryStoreAPI",
+			"value": "https://simple-grocery-store-api.glitch.me",
+			"type": "string"
+		}
+	]
+}
