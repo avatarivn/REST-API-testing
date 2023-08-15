@@ -67,7 +67,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n   \"productId\": 8739,\r\n   \"quantity\": 2\r\n}",
+					"raw": "{\r\n   \"productId\": 4646,\r\n   \"quantity\": 2\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -258,7 +258,7 @@
 	],
 	"variable": [
 		{
-			"id": "9b2a7def-2c4c-4430-8901-61a78436178e",
+			"id": "383b6de1-d91d-4925-9f7d-eb5c78b76dbf",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
