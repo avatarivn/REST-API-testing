@@ -145,6 +145,12 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{AccessToken}}"
+					}
+				},
 				"method": "POST",
 				"header": [],
 				"body": {
@@ -289,13 +295,13 @@
 	],
 	"variable": [
 		{
-			"id": "a478dcdf-8e4c-4730-95fe-244691f1656d",
+			"id": "20baa966-8c72-4757-be3d-74b97ec9930e",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
 		},
 		{
-			"id": "853ec9e1-e30e-406a-becc-e4597c583713",
+			"id": "7c361429-ee62-4149-8416-5bb3b844942b",
 			"key": "AccessToken",
 			"value": "",
 			"type": "string"
