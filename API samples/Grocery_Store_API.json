@@ -148,14 +148,14 @@
 				"auth": {
 					"type": "bearer",
 					"bearer": {
-						"token": "{{AccessToken}}"
+						"token": "{{accessToken}}"
 					}
 				},
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"cartId\": \"dX2LGmNmkmRvpjiHqUSCG\",\r\n    \"customerName\": \"Avatarian\"\r\n}",
+					"raw": "{\r\n    \"cartId\": \"MyO5APAf8m70oJ5iXnr5I\",\r\n    \"customerName\": \"{{$randomFullName}}\",\r\n    \"comment\": \"This is yet another test for API testing with Postman\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -295,13 +295,13 @@
 	],
 	"variable": [
 		{
-			"id": "edb9cdcd-32a5-42ee-939e-2c3015bafaf3",
+			"id": "7b57f612-f385-45c7-9947-7e441f722a93",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
 		},
 		{
-			"id": "87835559-85c5-4a6c-89d9-ce0dd0f1c828",
+			"id": "00dad3b3-6171-470b-b4b4-99887705b2f2",
 			"key": "accessToken",
 			"value": "Private Access Token",
 			"type": "string"
