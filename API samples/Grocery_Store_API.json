@@ -146,10 +146,9 @@
 			},
 			"request": {
 				"auth": {
-					"type": "apikey",
-					"apikey": {
-						"value": "{{accessToken}}",
-						"key": "myToken"
+					"type": "bearer",
+					"bearer": {
+						"token": "{{accessToken}}"
 					}
 				},
 				"method": "POST",
@@ -296,13 +295,13 @@
 	],
 	"variable": [
 		{
-			"id": "c0f917ae-965b-44f0-b1a9-a8d974a4cdda",
+			"id": "edcb40e3-d2bf-464d-9082-76cb26e333b5",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
 		},
 		{
-			"id": "5e538619-a102-4854-9e67-205acae1c3ca",
+			"id": "4a66e951-c6f3-42b6-9e7e-c8c9763e08e8",
 			"key": "accessToken",
 			"value": "Private Access Token",
 			"type": "string"
