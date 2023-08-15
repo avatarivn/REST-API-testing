@@ -165,7 +165,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{groceryStoreAPI}}/products?results=hello",
+					"raw": "{{groceryStoreAPI}}/products",
 					"host": [
 						"{{groceryStoreAPI}}"
 					],
@@ -180,7 +180,8 @@
 						},
 						{
 							"key": "results",
-							"value": "hello"
+							"value": "hello",
+							"disabled": true
 						},
 						{
 							"key": "available",
@@ -258,7 +259,7 @@
 	],
 	"variable": [
 		{
-			"id": "383b6de1-d91d-4925-9f7d-eb5c78b76dbf",
+			"id": "73cb3368-acdb-416b-94d2-f30d7df5650d",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
