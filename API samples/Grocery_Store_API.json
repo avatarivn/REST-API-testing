@@ -46,7 +46,7 @@
 					"variable": [
 						{
 							"key": "cartId",
-							"value": "dX2LGmNmkmRvpjiHqUSCG"
+							"value": "MyO5APAf8m70oJ5iXnr5I"
 						}
 					]
 				}
@@ -324,13 +324,13 @@
 	],
 	"variable": [
 		{
-			"id": "89db5745-db13-4e4c-94c8-8e41442b3564",
+			"id": "3bdbeea7-6b3c-4270-956b-1b878822e4a6",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
 		},
 		{
-			"id": "476c1033-88de-4baf-a18f-f5bcf8dfa4aa",
+			"id": "7c2c42f0-a8c9-4ba5-8dee-db8d8d16d96e",
 			"key": "accessToken",
 			"value": "Private Access Token",
 			"type": "string"
