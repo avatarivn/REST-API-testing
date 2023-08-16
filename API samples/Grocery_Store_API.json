@@ -207,18 +207,33 @@
 						"token": "{{accessToken}}"
 					}
 				},
-				"method": "GET",
+				"method": "PATCH",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"cartId\": \"MyO5APAf8m70oJ5iXnr5I\",\r\n    \"customerName\": \"{{$randomFullName}}\",\r\n    \"comment\": \"This is yet another test for API testing with Postman\"\r\n}",
+					"raw": "{\r\n    \"customerName\": \"{{$randomFullName}}\",\r\n    \"comment\": \"This is yet another test for API testing with Postman August 16\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
 						}
 					}
 				},
-				"url": "{{groceryStoreAPI}}/orders"
+				"url": {
+					"raw": "{{groceryStoreAPI}}/orders/:orderId",
+					"host": [
+						"{{groceryStoreAPI}}"
+					],
+					"path": [
+						"orders",
+						":orderId"
+					],
+					"variable": [
+						{
+							"key": "orderId",
+							"value": "l9oszrFSYgjl-p3aN--b9"
+						}
+					]
+				}
 			},
 			"response": []
 		},
@@ -351,13 +366,13 @@
 	],
 	"variable": [
 		{
-			"id": "5d574d6c-7e74-486a-b957-99ed0f0f24d3",
+			"id": "f7f2238d-a336-40e8-9813-7e62a8966946",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
 		},
 		{
-			"id": "6bbae1b7-2308-4291-a304-05fdb3716946",
+			"id": "3799584c-a015-4595-9ef9-afc2ef4501ae",
 			"key": "accessToken",
 			"value": "Private Access Token",
 			"type": "string"
