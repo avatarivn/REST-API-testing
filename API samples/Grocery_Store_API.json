@@ -54,6 +54,39 @@
 			"response": []
 		},
 		{
+			"name": "Modify cart item",
+			"id": "8153f535-b305-4411-97d5-d82b7f62236d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{groceryStoreAPI}}/carts/:cartId/items",
+					"host": [
+						"{{groceryStoreAPI}}"
+					],
+					"path": [
+						"carts",
+						":cartId",
+						"items"
+					],
+					"variable": [
+						{
+							"id": "c96d2dad-ad1d-4061-aa98-772e20e63d28",
+							"key": "cartId",
+							"value": "{{cartId}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Add an Item to Cart",
 			"id": "adbd6dbb-e2ad-41f2-8e82-b3bebff30538",
 			"protocolProfileBehavior": {
@@ -366,19 +399,19 @@
 	],
 	"variable": [
 		{
-			"id": "3f52fa06-fc1b-4317-9963-5e9300fda1aa",
+			"id": "892eb08c-43c4-4f01-b496-554f5a49be28",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
 		},
 		{
-			"id": "f0364631-ceae-474c-9a7d-363364232399",
+			"id": "8f99d18f-4619-4a27-a3dd-403a62815842",
 			"key": "accessToken",
 			"value": "Private Access Token",
 			"type": "string"
 		},
 		{
-			"id": "11f15f7a-f78c-4a73-9aa4-ce10ca45ae89",
+			"id": "fdb57333-bce2-4818-8015-e6a5f7153d9b",
 			"key": "cartId",
 			"value": "_fKW02TtIW6hbnKbxGq5t",
 			"type": "string"
