@@ -67,7 +67,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n   \"productId\": 4646,\r\n   \"quantity\": 2\r\n}",
+					"raw": "{\r\n   \"productId\": 4646,\r\n   \"quantity\": 8\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -87,7 +87,7 @@
 					"variable": [
 						{
 							"key": "cartId",
-							"value": "dX2LGmNmkmRvpjiHqUSCG"
+							"value": "MyO5APAf8m70oJ5iXnr5I"
 						}
 					]
 				}
@@ -324,13 +324,13 @@
 	],
 	"variable": [
 		{
-			"id": "483a3738-de12-4545-8d68-db401f8e8a86",
+			"id": "89db5745-db13-4e4c-94c8-8e41442b3564",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
 		},
 		{
-			"id": "cfaf007a-8d69-417c-8e3c-f181350b060b",
+			"id": "476c1033-88de-4baf-a18f-f5bcf8dfa4aa",
 			"key": "accessToken",
 			"value": "Private Access Token",
 			"type": "string"
