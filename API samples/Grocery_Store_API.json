@@ -65,21 +65,34 @@
 				},
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"quantity\": 7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "{{groceryStoreAPI}}/carts/:cartId/items",
+					"raw": "{{groceryStoreAPI}}/carts/:cartId/items/:itemId",
 					"host": [
 						"{{groceryStoreAPI}}"
 					],
 					"path": [
 						"carts",
 						":cartId",
-						"items"
+						"items",
+						":itemId"
 					],
 					"variable": [
 						{
-							"id": "c96d2dad-ad1d-4061-aa98-772e20e63d28",
 							"key": "cartId",
 							"value": "{{cartId}}"
+						},
+						{
+							"key": "itemId",
+							"value": "683506285"
 						}
 					]
 				}
@@ -399,19 +412,19 @@
 	],
 	"variable": [
 		{
-			"id": "0545f021-3253-4b81-92ad-0275c8a97fe9",
+			"id": "6f500ee1-89f3-4b2b-8022-03fa6fbbaf08",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
 		},
 		{
-			"id": "1c23d2e8-3aa5-4783-8a0b-3d187bbf3ce7",
+			"id": "459b07e9-4979-44ac-b60a-29dd389338ef",
 			"key": "accessToken",
 			"value": "Private Access Token",
 			"type": "string"
 		},
 		{
-			"id": "806c9ce0-c5cb-409b-b8cb-e2207fcfb0ff",
+			"id": "470a5ab0-ce17-4bcb-b257-50ddf1a5ed3c",
 			"key": "cartId",
 			"value": "l9oszrFSYgjl-p3aN--b9",
 			"type": "string"
