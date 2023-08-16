@@ -157,17 +157,8 @@
 				"auth": {
 					"type": "noauth"
 				},
-				"method": "PUT",
+				"method": "DELETE",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"productId\": 4643,\r\n    \"quantity\": 7\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
 				"url": {
 					"raw": "{{groceryStoreAPI}}/carts/:cartId/items/:itemId",
 					"host": [
@@ -508,19 +499,19 @@
 	],
 	"variable": [
 		{
-			"id": "26d01bbb-ce21-4c0a-9853-bb493cfcbc3c",
+			"id": "c5f75660-e50f-40dd-ac99-8ea0d34fc84f",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
 		},
 		{
-			"id": "6c31b09f-dc45-4c04-ae37-6cfb415b0087",
+			"id": "3723f0dc-9f20-4d69-b668-c1029f5d1f74",
 			"key": "accessToken",
 			"value": "Private Access Token",
 			"type": "string"
 		},
 		{
-			"id": "4c0f5738-91a3-4c24-be9c-e40624438495",
+			"id": "9626c7e2-d416-46ef-b57f-664663fcaecc",
 			"key": "cartId",
 			"value": "",
 			"type": "string"
