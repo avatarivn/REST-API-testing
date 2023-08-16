@@ -195,6 +195,34 @@
 			"response": []
 		},
 		{
+			"name": "Update an Order",
+			"id": "5add1b3e-bfb1-4076-b650-f274fcf69124",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{accessToken}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cartId\": \"MyO5APAf8m70oJ5iXnr5I\",\r\n    \"customerName\": \"{{$randomFullName}}\",\r\n    \"comment\": \"This is yet another test for API testing with Postman\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{groceryStoreAPI}}/orders"
+			},
+			"response": []
+		},
+		{
 			"name": "Get all products",
 			"id": "1dbf0ca0-bece-4f09-8f4a-d835c6329d8a",
 			"protocolProfileBehavior": {
@@ -323,13 +351,13 @@
 	],
 	"variable": [
 		{
-			"id": "447be3eb-d37c-40ee-877d-0e214068a19e",
+			"id": "5d574d6c-7e74-486a-b957-99ed0f0f24d3",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
 		},
 		{
-			"id": "86e5deab-2c8e-4cdb-a28d-a3f28cd87ad3",
+			"id": "6bbae1b7-2308-4291-a304-05fdb3716946",
 			"key": "accessToken",
 			"value": "Private Access Token",
 			"type": "string"
