@@ -148,6 +148,54 @@
 			"response": []
 		},
 		{
+			"name": "Delete item from cart",
+			"id": "f209a5bd-ddfe-4b47-b566-c79d33b8b36d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productId\": 4643,\r\n    \"quantity\": 7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{groceryStoreAPI}}/carts/:cartId/items/:itemId",
+					"host": [
+						"{{groceryStoreAPI}}"
+					],
+					"path": [
+						"carts",
+						":cartId",
+						"items",
+						":itemId"
+					],
+					"variable": [
+						{
+							"id": "127ab9a5-64e7-4423-a69d-c1568a02ba41",
+							"key": "cartId",
+							"value": "{{cartId}}"
+						},
+						{
+							"id": "cc18c6a9-2e17-43d9-96fe-a1de372c06b6",
+							"key": "itemId",
+							"value": "570751498"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "Add an Item to Cart",
 			"id": "adbd6dbb-e2ad-41f2-8e82-b3bebff30538",
 			"protocolProfileBehavior": {
@@ -460,19 +508,19 @@
 	],
 	"variable": [
 		{
-			"id": "81b4d235-17a7-4882-8031-d03623cfbb78",
+			"id": "26d01bbb-ce21-4c0a-9853-bb493cfcbc3c",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
 		},
 		{
-			"id": "80bd2a14-95e2-410d-ae6b-8ef369a554b5",
+			"id": "6c31b09f-dc45-4c04-ae37-6cfb415b0087",
 			"key": "accessToken",
 			"value": "Private Access Token",
 			"type": "string"
 		},
 		{
-			"id": "f3ea8da6-ef3a-494d-b750-772b23d79a4d",
+			"id": "4c0f5738-91a3-4c24-be9c-e40624438495",
 			"key": "cartId",
 			"value": "",
 			"type": "string"
