@@ -346,7 +346,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "11f63495-87a6-40e7-88b0-3a5fef412916",
+				"id": "ed353de4-74ec-4fd9-89e0-916baad3e6b6",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -356,7 +356,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "a38afa2a-aa56-47f4-a60b-8a433302d474",
+				"id": "5d67df2b-3c4f-4c37-9d6f-1cdb9d29a2f1",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -366,15 +366,21 @@
 	],
 	"variable": [
 		{
-			"id": "f7f2238d-a336-40e8-9813-7e62a8966946",
+			"id": "2404ba04-6eb7-46f4-9f8d-a954681d7646",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
 		},
 		{
-			"id": "3799584c-a015-4595-9ef9-afc2ef4501ae",
+			"id": "e6e37eab-6718-4b44-b651-abd656599092",
 			"key": "accessToken",
 			"value": "Private Access Token",
+			"type": "string"
+		},
+		{
+			"id": "6363be2e-c946-4138-911b-8452994a1699",
+			"key": "cartId",
+			"value": "_fKW02TtIW6hbnKbxGq5t",
 			"type": "string"
 		}
 	]
