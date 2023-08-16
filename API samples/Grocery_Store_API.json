@@ -314,15 +314,6 @@
 				},
 				"method": "GET",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"cartId\": \"MyO5APAf8m70oJ5iXnr5I\",\r\n    \"customerName\": \"{{$randomFullName}}\",\r\n    \"comment\": \"This is yet another test for API testing with Postman\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
 				"url": "{{groceryStoreAPI}}/orders"
 			},
 			"response": []
@@ -499,19 +490,19 @@
 	],
 	"variable": [
 		{
-			"id": "4a72e382-2502-4ac2-bd1a-21419214c1db",
+			"id": "ecaf220f-8bf9-4d24-8d29-d15b8747d465",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
 		},
 		{
-			"id": "ef8724ab-4f0b-4930-a60f-e3d0f26819a7",
+			"id": "e5a399b4-af24-4e15-9f23-ebede905860b",
 			"key": "accessToken",
 			"value": "Private Access Token",
 			"type": "string"
 		},
 		{
-			"id": "8ed9045a-379c-4819-9f33-7c919494012c",
+			"id": "55541829-685b-402c-b137-6083af4f8372",
 			"key": "cartId",
 			"value": "",
 			"type": "string"
