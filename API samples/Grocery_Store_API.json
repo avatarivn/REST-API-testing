@@ -87,7 +87,7 @@
 					"variable": [
 						{
 							"key": "cartId",
-							"value": "MyO5APAf8m70oJ5iXnr5I"
+							"value": "{{cartId}}"
 						}
 					]
 				}
@@ -366,19 +366,19 @@
 	],
 	"variable": [
 		{
-			"id": "7065ef41-f74a-476a-9fd2-1a27352c6551",
+			"id": "3f52fa06-fc1b-4317-9963-5e9300fda1aa",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
 		},
 		{
-			"id": "e625bde0-a1e3-4d00-abeb-54f606579ad6",
+			"id": "f0364631-ceae-474c-9a7d-363364232399",
 			"key": "accessToken",
 			"value": "Private Access Token",
 			"type": "string"
 		},
 		{
-			"id": "7a519175-8705-4bb1-bda7-df9eb16250c6",
+			"id": "11f15f7a-f78c-4a73-9aa4-ce10ca45ae89",
 			"key": "cartId",
 			"value": "_fKW02TtIW6hbnKbxGq5t",
 			"type": "string"
