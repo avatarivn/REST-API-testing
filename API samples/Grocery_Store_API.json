@@ -317,6 +317,25 @@
 			"response": []
 		},
 		{
+			"name": "Delete an Order",
+			"id": "e926eaae-2d92-4440-8c47-9ce342579987",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "{{accessToken}}"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "{{groceryStoreAPI}}/orders"
+			},
+			"response": []
+		},
+		{
 			"name": "Update an Order",
 			"id": "5add1b3e-bfb1-4076-b650-f274fcf69124",
 			"protocolProfileBehavior": {
@@ -488,19 +507,19 @@
 	],
 	"variable": [
 		{
-			"id": "de869d1a-f1bd-48bf-9803-bef6edb367fd",
+			"id": "db8d25c8-538d-4720-af29-3b292ffd630c",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
 		},
 		{
-			"id": "5bbcb88c-89f3-4d65-910d-3a2c401371d3",
+			"id": "c2f643da-cb54-48b5-a99e-bbab4ffa96e5",
 			"key": "accessToken",
 			"value": "Private Access Token",
 			"type": "string"
 		},
 		{
-			"id": "7e2b3e22-6534-407a-9e73-13fc1f24801a",
+			"id": "5dde1569-fa80-4a4a-b401-bbd1ab3ef206",
 			"key": "cartId",
 			"value": "",
 			"type": "string"
