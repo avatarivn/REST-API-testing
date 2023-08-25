@@ -7,6 +7,75 @@
 	"item": [
 		{
 			"name": "Get Status",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "960f7e78-1165-4704-9ec8-99d71e486434",
+						"exec": [
+							"console.clear();\r",
+							"console.log('Before the request');"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "ab3d98df-ff3a-4c3f-8e79-0a88c96db942",
+						"exec": [
+							"/*'let' is a keyword to define variables. Strings go inside single or double quotes.\r",
+							"//Number variables don't need quotes.\r",
+							"let firstName = \"Joseph\";\r",
+							"let age = 29;\r",
+							"console.log(\"The name in the variable is \" + firstName + \" and is \" + age + \" years old.\");\r",
+							"firstName = 'Duncan';\r",
+							"\r",
+							"console.log(\"The name in the variable is now \" + firstName);\r",
+							"\r",
+							"\r",
+							"let firstName = \"Joseph\";\r",
+							"\r",
+							"function sayHello(name){\r",
+							"    console.log(`${name}, Hello from Postman`);\r",
+							"}\r",
+							"setTimeout()\r",
+							"sayHello(firstName);\r",
+							"\r",
+							"const add = (a,b) => a + b;\r",
+							"console.log(\"The sum of \" + 5 + \" and \" + 8 + \" is \" + add(5,8));\r",
+							"*/\r",
+							"const person = {\r",
+							"  firstName: \"Joseph\",\r",
+							"  lastName: \"Raven\",\r",
+							"  //special syntax property names\r",
+							"  'special name': \"This is a special property name\",\r",
+							"  age: 29,\r",
+							"  isMarried: false,\r",
+							"  email: \"josephraven@mymail.com\",\r",
+							"  sayhello: function () { return \"Hello, my name is \" + this.firstName; }\r",
+							"};\r",
+							"\r",
+							"//to access special syntax property\r",
+							"console.log(person['special name']);\r",
+							"console.log(person.sayhello());\r",
+							"\r",
+							"let jsonString = JSON.stringify(person);\r",
+							"let parsedJson = JSON.parse(jsonString);\r",
+							"console.log(jsonString);\r",
+							"console.log(parsedJson);\r",
+							"\r",
+							"\r",
+							"pm.response.\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
 			"id": "ba0d68ac-57af-4fe5-9fed-4b0860d3522e",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
@@ -507,19 +576,19 @@
 	],
 	"variable": [
 		{
-			"id": "db8d25c8-538d-4720-af29-3b292ffd630c",
+			"id": "df1bc98f-7e06-45d4-a59a-1a9d94982052",
 			"key": "groceryStoreAPI",
 			"value": "https://simple-grocery-store-api.glitch.me",
 			"type": "string"
 		},
 		{
-			"id": "c2f643da-cb54-48b5-a99e-bbab4ffa96e5",
+			"id": "c2ee4dba-920d-4b19-8539-a959d6df5677",
 			"key": "accessToken",
 			"value": "Private Access Token",
 			"type": "string"
 		},
 		{
-			"id": "5dde1569-fa80-4a4a-b401-bbd1ab3ef206",
+			"id": "5e2ca06a-6872-40ce-8785-074ec653d1db",
 			"key": "cartId",
 			"value": "",
 			"type": "string"
